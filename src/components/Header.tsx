@@ -18,9 +18,9 @@ export default function Header({ onNavigate, currentPage }: HeaderProps) {
             className="flex items-center space-x-2"
           >
             <div className="w-10 h-10 bg-gradient-to-br from-amber-600 to-amber-800 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">F</span>
+              <span className="text-white font-bold text-xl">B</span>
             </div>
-            <span className="text-2xl font-bold text-gray-900">Furniva</span>
+            <span className="text-2xl font-bold text-gray-900">Bradlows</span>
           </button>
 
           <nav className="hidden md:flex items-center space-x-8">

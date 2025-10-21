@@ -17,7 +17,7 @@ export default function Home({ onNavigate }: HomeProps) {
             <div className="space-y-8">
               <div className="inline-block">
                 <span className="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-semibold">
-                  New Collection 2024
+                  New Collection 2025
                 </span>
               </div>
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
@@ -25,7 +25,7 @@ export default function Home({ onNavigate }: HomeProps) {
                 <span className="text-amber-600"> Premium Furniture</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Discover our curated collection of modern, elegant furniture designed to elevate your home. Experience pieces in AR before you buy.
+                Discover our curated collection of modern, elegant furniture designed to elevate your home. Visualize pieces in your own home before you buy.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
@@ -62,7 +62,7 @@ export default function Home({ onNavigate }: HomeProps) {
                 <Truck className="text-amber-600" size={28} />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">Free Shipping</h3>
-              <p className="text-gray-600 text-sm">On orders over $500</p>
+              <p className="text-gray-600 text-sm">On orders over R5000</p>
             </div>
             <div className="text-center">
               <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">

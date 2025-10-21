@@ -26,7 +26,7 @@ export default function ProductCard({ product, onViewDetails }: ProductCardProps
           <button className="bg-white p-2 rounded-full shadow-lg hover:bg-amber-600 hover:text-white transition-colors">
             <Heart size={18} />
           </button>
-          <button
+          <a href='https://cuttingedgetech-chair-3.netlify.app/' target='_blank'
             className="bg-amber-600 p-2 rounded-full shadow-lg hover:bg-amber-700 transition-colors relative group/ar"
             title="View in AR"
           >
@@ -34,7 +34,7 @@ export default function ProductCard({ product, onViewDetails }: ProductCardProps
             <span className="absolute right-full mr-2 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover/ar:opacity-100 transition-opacity pointer-events-none">
               AR View
             </span>
-          </button>
+          </a>
         </div>
 
         {!product.inStock && (
@@ -77,10 +77,10 @@ export default function ProductCard({ product, onViewDetails }: ProductCardProps
 
         <div className="flex items-center justify-between">
           <div className="flex items-baseline gap-2">
-            <span className="text-2xl font-bold text-gray-900">${product.price}</span>
+            <span className="text-2xl font-bold text-gray-900">R{product.price}</span>
             {product.originalPrice && (
               <span className="text-lg text-gray-400 line-through">
-                ${product.originalPrice}
+                R{product.originalPrice}
               </span>
             )}
           </div>

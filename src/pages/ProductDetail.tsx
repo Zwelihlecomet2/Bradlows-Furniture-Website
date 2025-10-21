@@ -108,15 +108,15 @@ export default function ProductDetail({ productId, onNavigate }: ProductDetailPr
                 </div>
 
                 <div className="flex items-baseline gap-4 mb-6">
-                  <span className="text-4xl font-bold text-gray-900">${product.price}</span>
+                  <span className="text-4xl font-bold text-gray-900">R{product.price}</span>
                   {product.originalPrice && (
                     <span className="text-2xl text-gray-400 line-through">
-                      ${product.originalPrice}
+                      R{product.originalPrice}
                     </span>
                   )}
                   {product.originalPrice && (
                     <span className="bg-red-100 text-red-600 px-3 py-1 rounded-full font-semibold">
-                      Save ${product.originalPrice - product.price}
+                      Save R{product.originalPrice - product.price}
                     </span>
                   )}
                 </div>
@@ -206,7 +206,7 @@ export default function ProductDetail({ productId, onNavigate }: ProductDetailPr
                   <Truck className="text-amber-600" size={24} />
                   <div>
                     <p className="font-semibold">Free Shipping</p>
-                    <p className="text-sm text-gray-600">On orders over $500</p>
+                    <p className="text-sm text-gray-600">On orders over R500</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 text-gray-700">

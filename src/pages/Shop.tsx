@@ -76,15 +76,15 @@ export default function Shop({ onNavigate }: ShopProps) {
                   <div className="space-y-2">
                     <label className="flex items-center gap-2">
                       <input type="checkbox" className="rounded text-amber-600" />
-                      <span className="text-gray-700">Under $500</span>
+                      <span className="text-gray-700">Under R500</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="checkbox" className="rounded text-amber-600" />
-                      <span className="text-gray-700">$500 - $1000</span>
+                      <span className="text-gray-700">R500 - R1000</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="checkbox" className="rounded text-amber-600" />
-                      <span className="text-gray-700">$1000+</span>
+                      <span className="text-gray-700">R1000+</span>
                     </label>
                   </div>
                 </div>

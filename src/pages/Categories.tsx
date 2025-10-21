@@ -121,10 +121,10 @@ export default function Categories({ onNavigate }: CategoriesProps) {
                           <div className="flex-1">
                             <h5 className="font-semibold text-gray-900 mb-1">{product.name}</h5>
                             <div className="flex items-center gap-2">
-                              <span className="text-amber-600 font-bold">${product.price}</span>
+                              <span className="text-amber-600 font-bold">R{product.price}</span>
                               {product.originalPrice && (
                                 <span className="text-gray-400 line-through text-sm">
-                                  ${product.originalPrice}
+                                  R{product.originalPrice}
                                 </span>
                               )}
                             </div>
