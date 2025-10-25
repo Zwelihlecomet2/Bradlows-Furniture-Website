@@ -59,12 +59,19 @@ export default function ProductDetail({ productId, onNavigate }: ProductDetailPr
                     SALE
                   </div>
                 )}
-                <a href='https://cuttingedgetech-chair-3.netlify.app/' target='_blank' className="absolute top-4 right-4 bg-amber-600 text-white p-3 rounded-full shadow-lg hover:bg-amber-700 transition-colors group">
-                  <View size={24} />
-                  <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-2 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                    View in AR
-                  </span>
-                </a>
+                  {product.arUrl && (
+                    <a
+                      href={product.arUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="absolute top-4 right-4 bg-amber-600 text-white p-3 rounded-full shadow-lg hover:bg-amber-700 transition-colors group"
+                    >
+                      <View size={24} />
+                      <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-2 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                        View in AR
+                      </span>
+                    </a>
+                  )}
               </div>
 
               <div className="grid grid-cols-4 gap-4">

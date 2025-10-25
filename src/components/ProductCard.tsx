@@ -26,15 +26,20 @@ export default function ProductCard({ product, onViewDetails }: ProductCardProps
           <button className="bg-white p-2 rounded-full shadow-lg hover:bg-amber-600 hover:text-white transition-colors">
             <Heart size={18} />
           </button>
-          <a href='https://cuttingedgetech-chair-3.netlify.app/' target='_blank'
-            className="bg-amber-600 p-2 rounded-full shadow-lg hover:bg-amber-700 transition-colors relative group/ar"
-            title="View in AR"
-          >
-            <View size={18} className="text-white" />
-            <span className="absolute right-full mr-2 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover/ar:opacity-100 transition-opacity pointer-events-none">
-              AR View
-            </span>
-          </a>
+          {product.arUrl && (
+            <a
+              href={product.arUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-amber-600 p-2 rounded-full shadow-lg hover:bg-amber-700 transition-colors relative group/ar"
+              title="View in AR"
+            >
+              <View size={18} className="text-white" />
+              <span className="absolute right-full mr-2 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover/ar:opacity-100 transition-opacity pointer-events-none">
+                AR View
+              </span>
+            </a>
+          )}
         </div>
 
         {!product.inStock && (
