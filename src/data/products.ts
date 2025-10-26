@@ -71,7 +71,7 @@ export const products: Product[] = [
     price: 1099,
     category: 'Bedroom',
     image: PlatformChair,
-    arUrl: 'https://cuttingedgetech-chair-3.netlify.app/?product=5',
+    arUrl: 'https://fnb-app-of-year.netlify.app/?product=5',
     description: 'Elegant platform chair with tufted headboard and soft fabric.',
     rating: 4.8,
     reviews: 201,
