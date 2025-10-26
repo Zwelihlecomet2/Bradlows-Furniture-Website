@@ -10,7 +10,7 @@ export default function Header({ onNavigate, currentPage }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm">
+    <header className="w-full py-4 px-6 bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <button
@@ -83,6 +83,8 @@ export default function Header({ onNavigate, currentPage }: HeaderProps) {
             </button>
           </div>
         </div>
+
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold">Bradlows</h1>
 
         {mobileMenuOpen && (
           <div className="md:hidden py-4 border-t">
