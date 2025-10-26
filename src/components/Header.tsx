@@ -84,8 +84,6 @@ export default function Header({ onNavigate, currentPage }: HeaderProps) {
           </div>
         </div>
 
-        <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold">Bradlows</h1>
-
         {mobileMenuOpen && (
           <div className="md:hidden py-4 border-t">
             <nav className="flex flex-col space-y-4">
